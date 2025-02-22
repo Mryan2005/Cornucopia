@@ -1,0 +1,16 @@
+name: Greetings
+
+on: [pull_request_target, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: "Hey, guy. It is the first time that you submit the issue to Cornucopia. Thanks for your support."
+        pr-message: "Hey, guy. It is the first time that you submit the PR to Cornucopia. Thanks for your support."
