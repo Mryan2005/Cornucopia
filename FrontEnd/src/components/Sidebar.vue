@@ -24,7 +24,7 @@
   <style lang="scss" scoped>
   .dock-sidebar {
     width: 80px;
-    background-color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
     color: white;
     position: fixed;
     top: 0;
