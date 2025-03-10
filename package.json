@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "@types/node": "^22.13.5"
+  },
+  "dependencies": {
+    "@angular/cli": "^19.2.1"
   }
 }

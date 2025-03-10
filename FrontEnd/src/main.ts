@@ -1,6 +1,6 @@
-import { createApp } from 'vue';
-import App from './App.vue';
-import router from './router'; // 导入路由
-import './assets/styles.scss'; // 引入全局SCSS文件
+import { bootstrapApplication } from '@angular/platform-browser';
+import { appConfig } from './app/app.config';
+import { AppComponent } from './app/app.component';
 
-createApp(App).use(router).mount('#app'); // 使用路由
+bootstrapApplication(AppComponent, appConfig)
+  .catch((err) => console.error(err));
